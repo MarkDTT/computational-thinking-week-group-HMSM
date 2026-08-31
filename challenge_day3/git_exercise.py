@@ -10,4 +10,5 @@ def print_team():
     print(maria.return_name())
     print(samir.return_name())
 
+print_team()
 
