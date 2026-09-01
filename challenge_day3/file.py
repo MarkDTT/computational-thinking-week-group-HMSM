@@ -1,2 +1,4 @@
 def return_name():
-    return "Mark"
+    print("Mark")
+
+return_name()

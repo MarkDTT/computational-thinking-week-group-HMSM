@@ -1,15 +1,13 @@
-import math
-
-def solution_station_4(number: int) -> bool:
-    if number < 2:
+def solution_station_4(n):
+    if n <= 1:
         return False
-    if number == 2:
+    if n <= 3:
         return True
-    if number % 2 == 0:
+    if n % 2 == 0 or n % 3 == 0:
         return False
-
-    limit = int(math.sqrt(number)) + 1
-    for i in range(3, limit, 2):
-        if number % i == 0:
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
             return False
+        i += 6
     return True
