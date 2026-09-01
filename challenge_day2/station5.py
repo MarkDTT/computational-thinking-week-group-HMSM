@@ -1,15 +1,15 @@
 def solution_station_5(name: str):
     teams = {
         1: ["Daeho", "David G", "Kaisa", "Oliver", "Sara", "Dan", "Ivar", "Lotte", "Riya", "Vassil",
-            "Twan", "Ester", "Karolina", "Lena", "Margarita", "Anna", "Kien", "Klaudia", "Maliah", "Todd"],
+            "Twan", "Ester", "Karolina", "Lena", "Margarita", "Anna", "Kien", "Klaudia", "Maliah", "Todd", "Alex"],
 
         2: ["Oumaima", "Mathilde", "Marie-Caroline", "Anita", "Ziyan", "Bernardo", "Eleanor", "Lorijn",
             "Maria Paz", "Younes", "Yvan", "Henning", "Liangyu", "Maciej", "Toprak", "Chris",
-            "GengXin", "Mingze", "Phoebe", "Madeleine"],
+            "GengXin", "Mingze", "Phoebe", "Madeleine", "Iris"],
 
         3: ["Betija", "Haider", "Kacper", "Sophie P", "Amir", "Baltasar", "Isar", "Jelle", "Nicolas",
             "David C", "Ipek", "Juan", "Marfa", "Maria", "Alissa", "Leopoldo", "Mies", "Jiaying",
-            "Kaixin", "Mai", "Sem", "Tibbe"],
+            "Kaixin", "Mai", "Sem", "Tibbe", "Donna"],
 
         4: ["Justus", "Julia", "Philip", "Uli", "Vanessa", "Anna D", "Ekaterina", "Thessa", "Tongfei",
             "Yang Yang", "Benedikt", "Jan", "Nadee", "Osjah", "Tim", "Eliana", "Joana", "Peilin",
@@ -27,3 +27,6 @@ def solution_station_5(name: str):
     return -1
 
 
+
+if __name__ == "__main__":
+    print(solution_station_5("Daeho"))
