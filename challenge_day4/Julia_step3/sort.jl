@@ -4,7 +4,7 @@ using DataFrames, CSV, Statistics, DelimitedFiles
 people_df = CSV.File("data3.csv") |> DataFrame
 
 # Function to classify a score based on quartiles
-function classify_score(score, quartiles)
+function classification_score(score, quartiles)
     if score <= quartiles[1]
         return "low"
     elseif score <= quartiles[2]
