@@ -3,7 +3,7 @@ import scala.util.Try
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val filePath = "/Users/mark/Desktop/CSSci - Semester 3/computational-thinking-week-group-HMSM/challenge_day4/testdata/data4.txt"
+    val filePath = "/Users/mark/Desktop/CSSci - Semester 3/computational-thinking-week-group-HMSM/challenge_day4/testdata/data6.txt"
     val lines = scala.io.Source.fromFile(filePath).getLines().toList
     val outputLines = lines.zipWithIndex.map {
       case (line, 0) => s"$line,Comments"
