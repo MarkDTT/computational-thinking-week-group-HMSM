@@ -1,32 +1,17 @@
-def solution_station_5(name: str):
+def solution_station_5(name):
     teams = {
-        1: ["Daeho", "David G", "Kaisa", "Oliver", "Sara", "Dan", "Ivar", "Lotte", "Riya", "Vassil",
-            "Twan", "Ester", "Karolina", "Lena", "Margarita", "Anna", "Kien", "Klaudia", "Maliah", "Todd", "Alex"],
+        1: ["Ainas", "Ben", "Christopher", "Ebony", "Iuliia", "Klementyna", "Tiara", "Tobit", "Yasmin", "Yurui", "Yuvraj", "Zoë", "Lula", "Markus", "Mateo", "Mufang", "Muni", "Nandini", "Nathan", "Oumaima"],
 
-        2: ["Oumaima", "Mathilde", "Marie-Caroline", "Anita", "Ziyan", "Bernardo", "Eleanor", "Lorijn",
-            "Maria Paz", "Younes", "Yvan", "Henning", "Liangyu", "Maciej", "Toprak", "Chris",
-            "GengXin", "Mingze", "Phoebe", "Madeleine", "Iris"],
+        2: ["Alex", "Arwen", "Christina", "David", "Helen", "Huy Bao", "Iris", "Katharina", "Lora", "Mark", "Mats", "Minseo", "Quinn", "Rajko", "Sade", "Sylwia", "Tarling", "Vadim", "Zeno"],
 
-        3: ["Betija", "Haider", "Kacper", "Sophie P", "Amir", "Baltasar", "Isar", "Jelle", "Nicolas",
-            "David C", "Ipek", "Juan", "Marfa", "Maria", "Alissa", "Leopoldo", "Mies", "Jiaying",
-            "Kaixin", "Mai", "Sem", "Tibbe", "Donna"],
+        3: ["Elizabeth", "Gabriel", "Jakub", "Luc", "Soelie",
+            "Aleksandra", "Arnav", "Donna", "Milan", "Rongze",
+            "Cris", "Jingqi", "Oliver", "Vaayu", "Yusef",
+            "Afua", "Anna", "Daniel", "Nataly", "Rafael"],
 
-        4: ["Justus", "Julia", "Philip", "Uli", "Vanessa", "Anna D", "Ekaterina", "Thessa", "Tongfei",
-            "Yang Yang", "Benedikt", "Jan", "Nadee", "Osjah", "Tim", "Eliana", "Joana", "Peilin",
-            "Pija", "Wenhao"],
+        4: ["An", "Yujie", "Douwe", "Jeremy", "Krishiv", "Lara", "Heer", "Illya", "Lucas", "Maria", "Michelle", "Neel", "Oliwia", "Paige", "Rakin", "Rapolas", "Samir", "Tom", "Yutong", "Amalia"]
 
-        5: ["Afua", "Cristina", "Greta", "Jace", "Laura", "Anna V", "Bassant", "Ivan", "Juriaan", "Kiavash"],
-
-        6: ["Keitaro", "Nohemi", "Norina", "Yifan", "Yinan", "Luo", "Nikola", "Olesya", "Sophie M", "Tom"]
     }
+    name_to_lt = {n: lt for lt, names in teams.items() for n in names}
 
-    for team, names in teams.items():
-        if name in names:
-            return team
-
-    return -1
-
-
-
-if __name__ == "__main__":
-    print(solution_station_5("Daeho"))
+    return name_to_lt.get(name, 1)
